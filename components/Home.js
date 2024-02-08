@@ -11,7 +11,7 @@ function Home() {
 
   const [moviesData, setMoviesData] = useState([]);
   useEffect(() => {
-    fetch("mymoviz-frontend-nine-ecru.vercel.app/movies")
+    fetch("mymoviz-backend-rho-silk.vercel.app/movies")
       .then((response) => response.json())
       .then((data) => {
         const formattedData = data.movies.map((movie) => {
