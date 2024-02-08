@@ -11,7 +11,7 @@ function Home() {
 
   const [moviesData, setMoviesData] = useState([]);
   useEffect(() => {
-    fetch("mymoviz-backend-roan-two.vercel.app")
+    fetch("mymoviz-backend-roan-two.vercel.app/movies")
       .then((response) => response.json())
       .then((data) => {
         const formattedData = data.movies.map((movie) => {
